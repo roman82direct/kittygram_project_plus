@@ -26,7 +26,6 @@ class Hex2NameColor(serializers.Field):
         return value
     # При записи код цвета конвертируется в его название
     def to_internal_value(self, data):
-        # Доверяй, но проверяй
         try:
             # Если имя цвета существует, то конвертируем код в название
             data = webcls.hex_to_name(data)
