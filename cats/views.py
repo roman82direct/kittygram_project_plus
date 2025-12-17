@@ -39,7 +39,6 @@ class OwnerViewSet(viewsets.ModelViewSet):
 
 
 # Собираем вьюсет, который будет уметь изменять или удалять отдельный объект.
-# А ничего больше он уметь не будет.
 class UpdateDeleteViewSet(
     mixins.UpdateModelMixin, mixins.DestroyModelMixin, viewsets.GenericViewSet
     ):
